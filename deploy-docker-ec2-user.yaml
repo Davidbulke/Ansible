@@ -54,7 +54,7 @@
     - name: Docker login
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
-        username: nanajanashia
+        username: davidbulke
         password: "{{docker_password}}"
     - name: Start container from compose
       community.docker.docker_compose:
