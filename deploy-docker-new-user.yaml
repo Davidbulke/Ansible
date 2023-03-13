@@ -50,13 +50,13 @@
   tasks:
     - name: Copy docker compose
       ansible.builtin.copy:
-        src: /Users/nanajanashia/Demo-projects/Bootcamp/Exercises/bootcamp-java-mysql-project/docker-compose-full.yaml
-        dest: /home/nana/docker-compose.yaml
+        src: /Users/david/devops/docker-compose-full.yaml
+        dest: /home/david/docker-compose.yaml
     - name: Docker login
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
-        username: nanajanashia
+        username: davidbulke
         password: "{{docker_password}}"
     - name: Start container from compose
       community.docker.docker_compose:
-        project_src: /home/nana
+        project_src: /home/david
