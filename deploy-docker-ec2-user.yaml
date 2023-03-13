@@ -49,7 +49,7 @@
   tasks:
     - name: Copy docker compose
       ansible.builtin.copy:
-        src: /Users/nanajanashia/Demo-projects/Bootcamp/Exercises/bootcamp-java-mysql-project/docker-compose-full.yaml
+        src: /Users/david/devops/docker-compose-full.yaml
         dest: /home/ec2-user/docker-compose.yaml
     - name: Docker login
       community.docker.docker_login:
